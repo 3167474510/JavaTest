@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- 移动端预览-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>详情页</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+    <link rel="stylesheet" href="./static/css/me.css">
+</head>
+<body>
+<!--导航 --><!--segment使页面呈现线框 -->
+<nav class="ui inverted attached segment m-padded-tb-mini">
+    <div class="ui container">
+        <!--导航组件 --><!-- secondary为使鼠标放上去有点亮变化，inverted为反转,stackable使缩放时可堆叠-->
+        <div class="ui inverted secondary stackable menu">
+            <!--导航里的logo --><!-- teal为导航里的颜色，item为menu里的条目-->
+            <h2 class="ui teal header item">Estar‘s Blog</h2>
+            <a herf="#" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
+            <a herf="#" class="m-item item m-mobile-hide"><i class="idea icon"></i>分类</a>
+            <a herf="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
+            <a herf="#" class="m-item item m-mobile-hide"><i class="clone icon"></i>归档</a>
+            <a herf="#" class="m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
+            <div class="right m-item item m-mobile-hide">
+                <!-- transparent为使搜索框透明-->
+                <div class="ui icon inverted transparent input">
+                    <input type="text" placeholder="Search……">
+                    <i class="search link icon"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+<!--中间内容 -->
+<div class="m-container m-padded-tb-big">
+
+</div>
+
+<!--底部内容 -->
+<footer class="ui inverted vertical segment m-padded-tb-massive">
+    <div class="ui center aligned container"><!--center aligned居中，divided使底部产生分割线 -->
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column ">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="./static/images/wechat.png" class="ui rounded image" alt="" style="width: 11em">
+                    </div>
+                </div>
+            </div>
+            <div class="four wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">最新博客</h4>
+                <div class="ui inverted link list">
+                    <a herf="#" class="item">用户故事（User Story）</a>
+                    <a herf="#" class="item">用户故事（User Story）</a>
+                    <a herf="#" class="item">用户故事（User Story）</a>
+                </div>
+
+            </div>
+            <div class="four wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">联系我</h4>
+                <div class="ui inverted link list">
+                    <a herf="#" class="item">Email：estart2021@163.com</a>
+                    <a herf="#" class="item">QQ：3167474510</a>
+                    <!-- <a herf="#" class="item">用户故事（User Story）</a>-->
+                </div>
+            </div>
+            <div class="five wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">blog</h4>
+                <p class="m-text-thin m-text-spaced m-opacity-tiny">这是我的个人博客，会分享关于编程、写作、思考相关的任何内容，希望可以给来到这儿的人有所帮助……</p>
+            </div>
+        </div>
+
+        <!--在底部用线划分出上下两个区域 -->
+        <div class="ui inverted section divider"></div>
+        <p class="m-text-thin m-text-spaced m-opacity-mini">Copyright © 2021-2022 zhangsen Designed by zhangsen</p>
+    </div>
+
+</footer>
+<script src="https://cdn.jsdelivr.net/jquery/3.2/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+<script>
+    $('.menu.toggle').click(function () {
+        $('.m-item').toggleClass('m-mobile-hide');
+    })
+</script>
+
+</body>
+</html>
